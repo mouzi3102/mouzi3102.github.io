@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SSR脚本安装 | 单纯の小窝</title>
+<title>使用软件包安装jellfyin | 单纯の小窝</title>
 <meta name="description" content="一个记录脚本的博客" />
 <link rel="shortcut icon" href="https://mouzi3102.github.io/favicon.ico">
 <link rel="stylesheet" href="https://mouzi3102.github.io/styles/main.css">
@@ -15,8 +15,11 @@
 <script src="https://mouzi3102.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://mouzi3102.github.io/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="连接服务器 执行如下命令
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp;..." />
+    <meta name="description" content="仅限centos7
+#安装依赖
+yum install libicu fontconfig -y
+#安装软件包
+rpm -Uvh --nodeps https://repo.jellyfin.org/releases/server/cent..." />
     <meta name="keywords" content="服务器" />
     <script src="https://mouzi3102.github.io/media/js/waterfall.min.js"></script>
     <script src="https://mouzi3102.github.io/media/js/prism.min.js"></script>
@@ -91,14 +94,14 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
       <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
         <div class="center content">
-          <div class="featured-image cover" style="background-image: url('https://mouzi3102.github.io/post-images/ssr-jiao-ben-an-zhuang.jpg');">
+          <div class="featured-image cover" style="background-image: url('https://mouzi3102.github.io/post-images/shi-yong-ruan-jian-bao-an-zhuang-jellfyin.jpeg');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2020-05-10"><i class="fa fa-calendar"></i><span class="lately">1 小时前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2020-05-10"><i class="fa fa-calendar"></i><span class="lately">14 分钟前</span></time>
               
-              <a href="https://mouzi3102.github.io/post/ssr-jiao-ben-an-zhuang/#comments" class="comments meta-info" title="">
-                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/ssr-jiao-ben-an-zhuang/"> </span>
+              <a href="https://mouzi3102.github.io/post/shi-yong-ruan-jian-bao-an-zhuang-jellfyin/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/shi-yong-ruan-jian-bao-an-zhuang-jellfyin/"> </span>
               </a>
-              <span id="/ssr-jiao-ben-an-zhuang/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              <span id="/shi-yong-ruan-jian-bao-an-zhuang-jellfyin/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
               
             </div>
             <div class="info">
@@ -107,7 +110,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
                       <a href="https://mouzi3102.github.io/tag/_FqJAz-1I/" class="ctag ctag-0 ctag-_FqJAz-1I" aria-label="">服务器</a>
                     
               </div>
-              <h1 class="title ularge white bold">SSR脚本安装</h1>
+              <h1 class="title ularge white bold">使用软件包安装jellfyin</h1>
             </div>
           </div>
         </div>  
@@ -117,8 +120,27 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <p>连接服务器 执行如下命令</p>
-<p>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</p>
+                  <p>仅限centos7</p>
+<p>#安装依赖</p>
+<p>yum install libicu fontconfig -y</p>
+<p>#安装软件包</p>
+<p>rpm -Uvh --nodeps https://repo.jellyfin.org/releases/server/centos/stable/jellyfin-10.5.5-1.el7.x86_64.rpm</p>
+<p>#启动jellyfin</p>
+<p>service jellyfin start</p>
+<p>#查看状态</p>
+<p>service jellyfin status</p>
+<p>#CentOS 7开机自启</p>
+<p>systemctl enable jellyfin</p>
+<p>然后就可以通过ip:8096访问该媒体库了。程序管理命令参考上面的就行了。</p>
+<p>一般CentOS是没安装ffmpeg的，先使用命令ffmpeg -version检查下ffmpeg是否存在，不存在的使用命令：</p>
+<p>#下载ffmpeg二进制<br>
+wget https://www.moerats.com/usr/down/ffmpeg/ffmpeg-git-$(getconf LONG_BIT)bit-static.tar.xz<br>
+#解压文件<br>
+tar xvf ffmpeg-git-<em>-static.tar.xz<br>
+#移动ffmpeg可执行文件<br>
+mv ffmpeg-git-</em>/ffmpeg ffmpeg-git-<em>/ffprobe /usr/bin/<br>
+#删除文件<br>
+rm -rf ffmpeg-git-</em></p>
 
                 </div>
                 <div class="clear"></div>
@@ -129,11 +151,11 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
             <section class="related section">
               
               <article class="prev grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/centos7-an-zhuang-wget.jpg');"></div>
-                 <a href="https://mouzi3102.github.io/post/centos7-an-zhuang-wget/" class="full-link"></a>
+                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/nat-shou-dong-an-zhuang-brook.jpg');"></div>
+                 <a href="https://mouzi3102.github.io/post/nat-shou-dong-an-zhuang-brook/" class="full-link"></a>
                  <div class="info">
                   <time datetime="2020-05-10">2020-05-10</time>
-                  <h4 class="title white no-margin">centos7安装wget</h4>
+                  <h4 class="title white no-margin">NAT手动安装Brook</h4>
                 </div>
                  <span class="epcl-button red">
                   <img src="https://mouzi3102.github.io/media/images/left-arrow.svg" width="15" alt="Left Arrow">
@@ -141,6 +163,19 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
                 <div class="overlay"></div>
               </article>
               
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser.jpg');"></div>
+                 <a href="https://mouzi3102.github.io/post/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-05-10">2020-05-10</time>
+                  <h4 class="title white no-margin">docker安装及docker安装aria2+aria2ui+Filebrowser</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://mouzi3102.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
               
 
                 <div class="clear"></div>

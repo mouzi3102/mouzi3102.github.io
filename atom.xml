@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-05-09T18:50:31.879Z</updated>
+    <updated>2020-05-09T19:32:47.778Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,172 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[NAT手动安装Brook]]></title>
+        <id>https://mouzi3102.github.io/post/nat-shou-dong-an-zhuang-brook/</id>
+        <link href="https://mouzi3102.github.io/post/nat-shou-dong-an-zhuang-brook/">
+        </link>
+        <updated>2020-05-09T19:25:57.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="注意-请给所有上传的文件最高权限">注意 请给所有上传的文件最高权限</h1>
+<p>安装Brook</p>
+<p>https://drive.google.com/file/d/10WfSRVLNCVNOBtxko_iiwtuPzKTBR8H8/view?usp=sharing</p>
+<p>点击上面得链接先下载Brook脚本上传至/root目录</p>
+<p>https://drive.google.com/file/d/1IINcdENiQY5hb24B5l1M_BsxM2g1KbOU/view?usp=sharing</p>
+<p>把/usr/local这两个文件夹给予最高权限后在/usr/local 文件夹下brook-pf文件夹 同时给予最高权限 在点击上面得链接下载book文件上传至brook-pf文件夹 给予最高权限</p>
+<p>https://drive.google.com/file/d/1tRJIMoiBkQCLPsBYUrHguhb6sPDy45QY/view?usp=sharing</p>
+<p>下载配置文件 上传至/usr/local/brook-pf 文件夹 给予最高权限</p>
+<p>https://drive.google.com/file/d/1Cr3wob5IEjyzyNjBpRv9ud_mQToP9-q7/view?usp=sharing</p>
+<p>下载日志文件 上传至/usr/local/brook-pf 文件夹 给予最高权限</p>
+<p>https://drive.google.com/file/d/1Lw5tvUCUDVP3ujZdDuUqgt6oZtWF7SFI/view?usp=sharing</p>
+<p>下载Brook执行文件 上传至 /etc/init.d 文件夹 同时给予/etc/init.d两个文件夹和执行文件最高权限<br>
+最后<br>
+输入 bash brook-pf.sh 输入7 输入1即可添加转发</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用软件包安装jellfyin]]></title>
+        <id>https://mouzi3102.github.io/post/shi-yong-ruan-jian-bao-an-zhuang-jellfyin/</id>
+        <link href="https://mouzi3102.github.io/post/shi-yong-ruan-jian-bao-an-zhuang-jellfyin/">
+        </link>
+        <updated>2020-05-09T19:19:13.000Z</updated>
+        <content type="html"><![CDATA[<p>仅限centos7</p>
+<p>#安装依赖</p>
+<p>yum install libicu fontconfig -y</p>
+<p>#安装软件包</p>
+<p>rpm -Uvh --nodeps https://repo.jellyfin.org/releases/server/centos/stable/jellyfin-10.5.5-1.el7.x86_64.rpm</p>
+<p>#启动jellyfin</p>
+<p>service jellyfin start</p>
+<p>#查看状态</p>
+<p>service jellyfin status</p>
+<p>#CentOS 7开机自启</p>
+<p>systemctl enable jellyfin</p>
+<p>然后就可以通过ip:8096访问该媒体库了。程序管理命令参考上面的就行了。</p>
+<p>一般CentOS是没安装ffmpeg的，先使用命令ffmpeg -version检查下ffmpeg是否存在，不存在的使用命令：</p>
+<p>#下载ffmpeg二进制<br>
+wget https://www.moerats.com/usr/down/ffmpeg/ffmpeg-git-$(getconf LONG_BIT)bit-static.tar.xz<br>
+#解压文件<br>
+tar xvf ffmpeg-git-<em>-static.tar.xz<br>
+#移动ffmpeg可执行文件<br>
+mv ffmpeg-git-</em>/ffmpeg ffmpeg-git-<em>/ffprobe /usr/bin/<br>
+#删除文件<br>
+rm -rf ffmpeg-git-</em></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docker安装及docker安装aria2+aria2ui+Filebrowser]]></title>
+        <id>https://mouzi3102.github.io/post/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser/</id>
+        <link href="https://mouzi3102.github.io/post/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser/">
+        </link>
+        <updated>2020-05-09T19:11:16.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="安装-docker如果机器没有的话">安装 docker(如果机器没有的话）</h1>
+<p>curl -sSL https://get.docker.com/ | sh</p>
+<p>service docker start#启动docker</p>
+<p>service docker stop#停止docker</p>
+<p>service docker restart#重启docker</p>
+<p>设置docker开机自启动如下：</p>
+<p>systemctl enable docker</p>
+<h1 id="一键安装aria2aria2uifilebrowser">一键安装aria2+aria2ui+Filebrowser</h1>
+<p>docker run -d --name aria2-ui -v /home/down:/data -p 80:80 wahyd4/aria2-ui</p>
+<p>Aria2: http://yourip/ui/<br>
+FileManger: http://yourip<br>
+请使用 admin/admin 进行登录</p>
+<p>这样下载的文件都放在 /home/down 这个文件夹里面</p>
+<p>文件夹没有写入权限，有兴趣看这篇文章了解 文章链接<br>
+不管原理，无脑给予 777</p>
+<p>如果不想用了可以使用下面的命令删除</p>
+<p>docker rm -f aria2-ui</p>
+<p>如果想加密 请删除后执行</p>
+<p>docker run -d --name ariang <br>
+-p 80:80 <br>
+-e PUID=1000 <br>
+-e PGID=1000 <br>
+-e ENABLE_AUTH=true <br>
+-e RPC_SECRET=Hello <br>
+-e ARIA2_SSL=false <br>
+-e ARIA2_USER=user <br>
+-e ARIA2_PWD=pwd <br>
+-v /home/down:/data <br>
+wahyd4/aria2-ui</p>
+<p>默认用户名：user<br>
+默认密码：pwd<br>
+可自行修改</p>
+<p>后续补充<br>
+根据个人的需求来选择，如果觉得不需要加密 Aria2 的管理界面的，其实用第一种方式就行了。非常简单，一行命令即可。</p>
+<p>同时也可以结合 APP ：Transdrone_2.5.15.apk 来使用，这个我放在网盘里，使用它来管理多个下载工具也是比较方便的。</p>
+<p>http://veger.ys168.com/</p>
+<figure data-type="image" tabindex="1"><img src="https://mouzi3102.github.io/post-images/1589051927819.webp" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[net-speeder 安装]]></title>
+        <id>https://mouzi3102.github.io/post/net-speeder-an-zhuang/</id>
+        <link href="https://mouzi3102.github.io/post/net-speeder-an-zhuang/">
+        </link>
+        <updated>2020-05-09T19:07:17.000Z</updated>
+        <content type="html"><![CDATA[<p>一键复制执行(安装完服务器会自动重启)<br>
+仅支持centos7</p>
+<p>wget https://github.com/a8866051/net-speeder/archive/master.zip&amp;&amp;unzip master.zip&amp;&amp;yum install epel-release -y&amp;&amp;yum install libpcap* -y&amp;&amp;yum install libnet* -y&amp;&amp;cd net-speeder-master&amp;&amp;sh build.sh&amp;&amp;yum install screen -y&amp;&amp;chmod +x /etc/rc.local&amp;&amp;echo &quot;nohup /root/net-speeder-master/net_speeder eth0 &quot;ip&quot; &gt;/dev/null 2&gt;&amp;1 &amp;&quot; &gt;&gt; /etc/rc.local&amp;&amp;reboot</p>
+<p>重新连接后执行</p>
+<p>ps -e</p>
+<p>查看是否有net_speeder进程。</p>
+<p>安装过程中报错，安装 lib 即可</p>
+<p>yum install libpcap*<br>
+yum install libnet*</p>
+<p>实际上一般不会报错 实测你安了lib也没啥用 还不如重置重来一遍</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[BBRPlus 安装方法]]></title>
+        <id>https://mouzi3102.github.io/post/bbrplus-an-zhuang-fang-fa/</id>
+        <link href="https://mouzi3102.github.io/post/bbrplus-an-zhuang-fang-fa/">
+        </link>
+        <updated>2020-05-09T19:03:01.000Z</updated>
+        <content type="html"><![CDATA[<p>一键脚本（仅CentOS）</p>
+<p>wget &quot;https://github.com/a8866051/bbrplus/raw/master/ok_bbrplus_centos.sh&quot; &amp;&amp; chmod +x ok_bbrplus_centos.sh &amp;&amp; ./ok_bbrplus_centos.sh</p>
+<p>安装后，执行uname -r，显示4.14.129-bbrplus则切换内核成功<br>
+执行lsmod | grep bbr，显示有bbrplus则开启成功</p>
+<p>手动安装方法：</p>
+<p>下载内核</p>
+<p>wget https://github.com/a8866051/bbrplus/raw/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm</p>
+<p>安装内核</p>
+<p>yum install -y kernel-4.14.129-bbrplus.rpm</p>
+<p>设置fq</p>
+<p>echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf</p>
+<p>设置bbrplus</p>
+<p>echo &quot;net.ipv4.tcp_congestion_control=bbrplus&quot; &gt;&gt; /etc/sysctl.conf</p>
+<p>重启</p>
+<p>reboot</p>
+<p>检查内核版本</p>
+<p>uname -r</p>
+<p>显示4.14.129-bbrplus则成功</p>
+<p>检查bbrplus是否已经启动</p>
+<p>lsmod | grep bbrplus</p>
+<p>显示有tcp_bbrplus则成功</p>
+<p>卸载方法：<br>
+安装别的内核bbrplus自动失效</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[解决gcc 未找到命令]]></title>
+        <id>https://mouzi3102.github.io/post/jie-jue-gcc-wei-zhao-dao-ming-ling/</id>
+        <link href="https://mouzi3102.github.io/post/jie-jue-gcc-wei-zhao-dao-ming-ling/">
+        </link>
+        <updated>2020-05-09T18:59:42.000Z</updated>
+        <content type="html"><![CDATA[<p>执行命令 安装GCC即可<br>
+一般是安装不完整 或者未安装导致的<br>
+yum install gcc</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[centos7安装wget]]></title>
+        <id>https://mouzi3102.github.io/post/centos7-an-zhuang-wget/</id>
+        <link href="https://mouzi3102.github.io/post/centos7-an-zhuang-wget/">
+        </link>
+        <updated>2020-05-09T18:50:43.000Z</updated>
+        <content type="html"><![CDATA[<p>yum -y install wget<br>
+执行上述命令即可安装</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SSR脚本安装]]></title>
         <id>https://mouzi3102.github.io/post/ssr-jiao-ben-an-zhuang/</id>
