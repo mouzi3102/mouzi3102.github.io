@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-05-09T21:02:43.060Z</updated>
+    <updated>2020-05-10T18:48:14.383Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[CentOS7查看和开启关闭防火墙]]></title>
+        <id>https://mouzi3102.github.io/post/centos7-cha-kan-he-kai-qi-guan-bi-fang-huo-qiang/</id>
+        <link href="https://mouzi3102.github.io/post/centos7-cha-kan-he-kai-qi-guan-bi-fang-huo-qiang/">
+        </link>
+        <updated>2020-05-10T18:43:02.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="centos-70默认使用的是firewall作为防火墙">CentOS 7.0默认使用的是firewall作为防火墙</h1>
+<p>查看防火墙状态</p>
+<p>firewall-cmd --state</p>
+<p>停止firewall</p>
+<p>systemctl stop firewalld.service</p>
+<p>禁止firewall开机启动</p>
+<p>systemctl disable firewalld.service</p>
+<p>开启防火墙</p>
+<p>systemctl start firewalld.service</p>
+<p>设置开机自启</p>
+<p>systemctl enable firewalld.service</p>
+<p>重启防火墙</p>
+<p>systemctl restart firewalld.service</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NAT手动安装Brook]]></title>
         <id>https://mouzi3102.github.io/post/nat-shou-dong-an-zhuang-brook/</id>
