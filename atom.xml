@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-05-11T10:19:57.017Z</updated>
+    <updated>2020-05-11T10:22:11.585Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://mouzi3102.github.io/post/youtube-shi-pin-cha-ru-ce-shi/">
         </link>
         <updated>2020-05-11T10:00:34.000Z</updated>
-        <content type="html"><![CDATA[<iframe width="1280" height="720" src="https://www.youtube.com/embed/rjDddkFoIFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
+        <content type="html"><![CDATA[<iframe width="1280" height="720" src="https://www.youtube.com/embed/rjDddkFoIFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>关于YouTube 视频嵌入的官方文档<br>
+https://support.google.com/youtube/answer/171780?hl=zh-Hans</p>
+<p>关于嵌入视频尺寸 修改 width=&quot;1280&quot; height=&quot;720&quot;即可</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[bilibili 视频插入博客代码]]></title>
