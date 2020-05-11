@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-05-11T06:39:12.750Z</updated>
+    <updated>2020-05-11T10:18:24.324Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[茜雫凛「自縛霊」]]></title>
+        <id>https://mouzi3102.github.io/post/youtube-shi-pin-cha-ru-ce-shi/</id>
+        <link href="https://mouzi3102.github.io/post/youtube-shi-pin-cha-ru-ce-shi/">
+        </link>
+        <updated>2020-05-11T10:00:34.000Z</updated>
+        <content type="html"><![CDATA[<iframe width="1280" height="720" src="https://www.youtube.com/embed/rjDddkFoIFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[bilibili 视频插入博客代码]]></title>
+        <id>https://mouzi3102.github.io/post/bilibili-shi-pin-cha-ru-ce-shi/</id>
+        <link href="https://mouzi3102.github.io/post/bilibili-shi-pin-cha-ru-ce-shi/">
+        </link>
+        <updated>2020-05-11T09:25:45.000Z</updated>
+        <content type="html"><![CDATA[<p>https://yww.uy/yQmnY</p>
+<p>现在bilibili已经改版为BV号 获取AV号使用Bilibili-Evolved 这个油猴脚本获取即可<br>
+<img src="https://mouzi3102.github.io/post-images/1589190305500.png" alt="" loading="lazy"></p>
+<p>附上效果图</p>
+<figure data-type="image" tabindex="1"><img src="https://mouzi3102.github.io/post-images/1589190342976.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Docker安装Oneindex]]></title>
         <id>https://mouzi3102.github.io/post/docker-an-zhuang-oneindex/</id>
@@ -210,27 +231,6 @@ yum install libnet*</p>
 <p>显示有tcp_bbrplus则成功</p>
 <p>卸载方法：<br>
 安装别的内核bbrplus自动失效</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[解决gcc 未找到命令]]></title>
-        <id>https://mouzi3102.github.io/post/jie-jue-gcc-wei-zhao-dao-ming-ling/</id>
-        <link href="https://mouzi3102.github.io/post/jie-jue-gcc-wei-zhao-dao-ming-ling/">
-        </link>
-        <updated>2020-05-09T18:59:42.000Z</updated>
-        <content type="html"><![CDATA[<p>执行命令 安装GCC即可<br>
-一般是安装不完整 或者未安装导致的<br>
-yum install gcc</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[centos7安装wget]]></title>
-        <id>https://mouzi3102.github.io/post/centos7-an-zhuang-wget/</id>
-        <link href="https://mouzi3102.github.io/post/centos7-an-zhuang-wget/">
-        </link>
-        <updated>2020-05-09T18:50:43.000Z</updated>
-        <content type="html"><![CDATA[<p>yum -y install wget<br>
-执行上述命令即可安装</p>
 ]]></content>
     </entry>
 </feed>
