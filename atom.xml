@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-05-11T06:33:09.514Z</updated>
+    <updated>2020-05-11T06:39:12.750Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[Docker安装Oneindex]]></title>
+        <id>https://mouzi3102.github.io/post/docker-an-zhuang-oneindex/</id>
+        <link href="https://mouzi3102.github.io/post/docker-an-zhuang-oneindex/">
+        </link>
+        <updated>2020-05-11T06:36:04.000Z</updated>
+        <content type="html"><![CDATA[<p>安装 docker(如果机器没有的话）<br>
+curl -sSL https://get.docker.com/ | sh</p>
+<p>service docker start#启动docker</p>
+<p>service docker stop#停止docker</p>
+<p>service docker restart#重启docker</p>
+<p>设置docker开机自启动如下：</p>
+<p>systemctl enable docker</p>
+<p>之后执行安装命令</p>
+<p>#创建临时容器：</p>
+<p>docker run -itd --name=tmp baiyuetribe/oneindex</p>
+<p>#拷贝容器内文件到宿主机目录：</p>
+<p>docker cp tmp:/var/www/html /opt/oneindex</p>
+<p>docker rm -f tmp</p>
+<p>#正式启动服务：</p>
+<p>docker run -d -p 8181:80 -v /opt/oneindex:/var/www/html --restart=always<br>
+baiyuetribe/oneindex</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Debian 安装 yum]]></title>
+        <id>https://mouzi3102.github.io/post/debian-an-zhuang-yum/</id>
+        <link href="https://mouzi3102.github.io/post/debian-an-zhuang-yum/">
+        </link>
+        <updated>2020-05-11T06:34:14.000Z</updated>
+        <content type="html"><![CDATA[<p>sudo apt-get update<br>
+sudo apt-get install build-essential<br>
+sudo apt-get install yum</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CentOS7查看和开启关闭防火墙]]></title>
         <id>https://mouzi3102.github.io/post/centos7-cha-kan-he-kai-qi-guan-bi-fang-huo-qiang/</id>
@@ -103,6 +138,7 @@ FileManger: http://yourip<br>
 <p>这样下载的文件都放在 /home/down 这个文件夹里面</p>
 <p>文件夹没有写入权限，有兴趣看这篇文章了解 文章链接<br>
 不管原理，无脑给予 777</p>
+<p>chmod 777 /home/down</p>
 <p>如果不想用了可以使用下面的命令删除</p>
 <p>docker rm -f aria2-ui</p>
 <p>如果想加密 请删除后执行</p>
@@ -195,16 +231,6 @@ yum install gcc</p>
         <updated>2020-05-09T18:50:43.000Z</updated>
         <content type="html"><![CDATA[<p>yum -y install wget<br>
 执行上述命令即可安装</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SSR脚本安装]]></title>
-        <id>https://mouzi3102.github.io/post/ssr-jiao-ben-an-zhuang/</id>
-        <link href="https://mouzi3102.github.io/post/ssr-jiao-ben-an-zhuang/">
-        </link>
-        <updated>2020-05-09T18:29:46.000Z</updated>
-        <content type="html"><![CDATA[<p>连接服务器 执行如下命令</p>
-<p>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</p>
 ]]></content>
     </entry>
 </feed>
