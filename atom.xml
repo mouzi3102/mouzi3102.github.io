@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-05-11T10:26:24.191Z</updated>
+    <updated>2020-05-12T08:18:41.328Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[Debian9安装Net-Speeder]]></title>
+        <id>https://mouzi3102.github.io/post/debian9-an-zhuang-net-speeder/</id>
+        <link href="https://mouzi3102.github.io/post/debian9-an-zhuang-net-speeder/">
+        </link>
+        <updated>2020-05-12T08:16:20.000Z</updated>
+        <content type="html"><![CDATA[<p>wget -O net_speeder.sh --no-check-certificate https://soft.mengclaw.com/Bash/net_speeder.sh &amp;&amp; bash net_speeder.sh</p>
+<p>选择1安装</p>
+<p>下次开机后输入   bash net_speeder.sh  进行启动</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[茜雫凛「自縛霊」]]></title>
         <id>https://mouzi3102.github.io/post/youtube-shi-pin-cha-ru-ce-shi/</id>
@@ -208,37 +219,6 @@ wahyd4/aria2-ui</p>
 <p>yum install libpcap*<br>
 yum install libnet*</p>
 <p>实际上一般不会报错 实测你安了lib也没啥用 还不如重置重来一遍</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[BBRPlus 安装方法]]></title>
-        <id>https://mouzi3102.github.io/post/bbrplus-an-zhuang-fang-fa/</id>
-        <link href="https://mouzi3102.github.io/post/bbrplus-an-zhuang-fang-fa/">
-        </link>
-        <updated>2020-05-09T19:03:01.000Z</updated>
-        <content type="html"><![CDATA[<p>一键脚本（仅CentOS）</p>
-<p>wget &quot;https://github.com/a8866051/bbrplus/raw/master/ok_bbrplus_centos.sh&quot; &amp;&amp; chmod +x ok_bbrplus_centos.sh &amp;&amp; ./ok_bbrplus_centos.sh</p>
-<p>安装后，执行uname -r，显示4.14.129-bbrplus则切换内核成功<br>
-执行lsmod | grep bbr，显示有bbrplus则开启成功</p>
-<p>手动安装方法：</p>
-<p>下载内核</p>
-<p>wget https://github.com/a8866051/bbrplus/raw/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm</p>
-<p>安装内核</p>
-<p>yum install -y kernel-4.14.129-bbrplus.rpm</p>
-<p>设置fq</p>
-<p>echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf</p>
-<p>设置bbrplus</p>
-<p>echo &quot;net.ipv4.tcp_congestion_control=bbrplus&quot; &gt;&gt; /etc/sysctl.conf</p>
-<p>重启</p>
-<p>reboot</p>
-<p>检查内核版本</p>
-<p>uname -r</p>
-<p>显示4.14.129-bbrplus则成功</p>
-<p>检查bbrplus是否已经启动</p>
-<p>lsmod | grep bbrplus</p>
-<p>显示有tcp_bbrplus则成功</p>
-<p>卸载方法：<br>
-安装别的内核bbrplus自动失效</p>
 ]]></content>
     </entry>
 </feed>
