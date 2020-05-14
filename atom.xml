@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-05-14T04:12:09.403Z</updated>
+    <updated>2020-05-14T05:59:12.183Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[UnblockNeteaseMusic 一键部署脚本]]></title>
+        <id>https://mouzi3102.github.io/post/unblockneteasemusic-yi-jian-bu-shu-jiao-ben/</id>
+        <link href="https://mouzi3102.github.io/post/unblockneteasemusic-yi-jian-bu-shu-jiao-ben/">
+        </link>
+        <updated>2020-05-14T04:13:06.000Z</updated>
+        <content type="html"><![CDATA[<p>执行</p>
+<p>wget -N --no-check-certificate raw.githubusercontent.com/XIU2/SHELL/master/unblock163.sh &amp;&amp; chmod +x unblock163.sh &amp;&amp; bash unblock163.sh</p>
+<p>设置端口</p>
+<p>做好转发</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Debian9安装Net-Speeder]]></title>
         <id>https://mouzi3102.github.io/post/debian9-an-zhuang-net-speeder/</id>
@@ -201,24 +213,6 @@ wahyd4/aria2-ui</p>
 <p>同时也可以结合 APP ：Transdrone_2.5.15.apk 来使用，这个我放在网盘里，使用它来管理多个下载工具也是比较方便的。</p>
 <p>http://veger.ys168.com/</p>
 <figure data-type="image" tabindex="1"><img src="https://mouzi3102.github.io/post-images/1589051927819.webp" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[net-speeder 安装]]></title>
-        <id>https://mouzi3102.github.io/post/net-speeder-an-zhuang/</id>
-        <link href="https://mouzi3102.github.io/post/net-speeder-an-zhuang/">
-        </link>
-        <updated>2020-05-09T19:07:17.000Z</updated>
-        <content type="html"><![CDATA[<p>一键复制执行(安装完服务器会自动重启)<br>
-仅支持centos7</p>
-<p>wget https://github.com/a8866051/net-speeder/archive/master.zip&amp;&amp;unzip master.zip&amp;&amp;yum install epel-release -y&amp;&amp;yum install libpcap* -y&amp;&amp;yum install libnet* -y&amp;&amp;cd net-speeder-master&amp;&amp;sh build.sh&amp;&amp;yum install screen -y&amp;&amp;chmod +x /etc/rc.local&amp;&amp;echo &quot;nohup /root/net-speeder-master/net_speeder eth0 &quot;ip&quot; &gt;/dev/null 2&gt;&amp;1 &amp;&quot; &gt;&gt; /etc/rc.local&amp;&amp;reboot</p>
-<p>重新连接后执行</p>
-<p>ps -e</p>
-<p>查看是否有net_speeder进程。</p>
-<p>安装过程中报错，安装 lib 即可</p>
-<p>yum install libpcap*<br>
-yum install libnet*</p>
-<p>实际上一般不会报错 实测你安了lib也没啥用 还不如重置重来一遍</p>
 ]]></content>
     </entry>
 </feed>
