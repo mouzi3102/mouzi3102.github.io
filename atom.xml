@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-05-14T05:59:12.183Z</updated>
+    <updated>2020-05-19T12:32:11.589Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[Openwrt主题]]></title>
+        <id>https://mouzi3102.github.io/post/openwrt-zhu-ti/</id>
+        <link href="https://mouzi3102.github.io/post/openwrt-zhu-ti/">
+        </link>
+        <updated>2020-05-19T12:29:06.000Z</updated>
+        <content type="html"><![CDATA[<p>个人修改了 背景图</p>
+<p>下载链接</p>
+<p>https://drive.google.com/file/d/1VUmcwmUzY4BftJDItcy8OE2VMFjSm1Zt/view?usp=sharing</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[UnblockNeteaseMusic 一键部署脚本]]></title>
         <id>https://mouzi3102.github.io/post/unblockneteasemusic-yi-jian-bu-shu-jiao-ben/</id>
@@ -167,52 +178,6 @@ tar xvf ffmpeg-git-<em>-static.tar.xz<br>
 mv ffmpeg-git-</em>/ffmpeg ffmpeg-git-<em>/ffprobe /usr/bin/<br>
 #删除文件<br>
 rm -rf ffmpeg-git-</em></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docker安装及docker安装aria2+aria2ui+Filebrowser]]></title>
-        <id>https://mouzi3102.github.io/post/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser/</id>
-        <link href="https://mouzi3102.github.io/post/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser/">
-        </link>
-        <updated>2020-05-09T19:11:16.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="安装-docker如果机器没有的话">安装 docker(如果机器没有的话）</h1>
-<p>curl -sSL https://get.docker.com/ | sh</p>
-<p>service docker start#启动docker</p>
-<p>service docker stop#停止docker</p>
-<p>service docker restart#重启docker</p>
-<p>设置docker开机自启动如下：</p>
-<p>systemctl enable docker</p>
-<h1 id="一键安装aria2aria2uifilebrowser">一键安装aria2+aria2ui+Filebrowser</h1>
-<p>docker run -d --name aria2-ui -v /home/down:/data -p 80:80 wahyd4/aria2-ui</p>
-<p>Aria2: http://yourip/ui/<br>
-FileManger: http://yourip<br>
-请使用 admin/admin 进行登录</p>
-<p>这样下载的文件都放在 /home/down 这个文件夹里面</p>
-<p>文件夹没有写入权限，有兴趣看这篇文章了解 文章链接<br>
-不管原理，无脑给予 777</p>
-<p>chmod 777 /home/down</p>
-<p>如果不想用了可以使用下面的命令删除</p>
-<p>docker rm -f aria2-ui</p>
-<p>如果想加密 请删除后执行</p>
-<p>docker run -d --name ariang <br>
--p 80:80 <br>
--e PUID=1000 <br>
--e PGID=1000 <br>
--e ENABLE_AUTH=true <br>
--e RPC_SECRET=Hello <br>
--e ARIA2_SSL=false <br>
--e ARIA2_USER=user <br>
--e ARIA2_PWD=pwd <br>
--v /home/down:/data <br>
-wahyd4/aria2-ui</p>
-<p>默认用户名：user<br>
-默认密码：pwd<br>
-可自行修改</p>
-<p>后续补充<br>
-根据个人的需求来选择，如果觉得不需要加密 Aria2 的管理界面的，其实用第一种方式就行了。非常简单，一行命令即可。</p>
-<p>同时也可以结合 APP ：Transdrone_2.5.15.apk 来使用，这个我放在网盘里，使用它来管理多个下载工具也是比较方便的。</p>
-<p>http://veger.ys168.com/</p>
-<figure data-type="image" tabindex="1"><img src="https://mouzi3102.github.io/post-images/1589051927819.webp" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
