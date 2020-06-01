@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-06-01T13:20:46.841Z</updated>
+    <updated>2020-06-01T13:34:24.062Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
     <entry>
-        <title type="html"><![CDATA[南阳移动与境外VPS默认修改DNS]]></title>
+        <title type="html"><![CDATA[南阳移动与境外VPS默认修改DNS并永久保存]]></title>
         <id>https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/</id>
         <link href="https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/">
         </link>
@@ -23,6 +23,11 @@ nameserver 211.138.24.66<br>
 nameserver 211.138.30.66<br>
 nameserver 211.138.180.2<br>
 nameserver 211.138.180.3</p>
+<p>注意使用下面命令后 将永远无法修改此文件 请谨慎使用</p>
+<p>修改 /etc/resolv.conf 同时设置权限 权限全给</p>
+<p>执行   chattr +i /etc/resolv.conf</p>
+<p>最后执行   service NetworkManager restart    重启网卡</p>
+<p>结束</p>
 ]]></content>
     </entry>
     <entry>

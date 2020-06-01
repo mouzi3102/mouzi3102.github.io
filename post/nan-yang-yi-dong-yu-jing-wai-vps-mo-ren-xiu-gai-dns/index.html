@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>南阳移动与境外VPS默认修改DNS | 单纯の小窝</title>
+<title>南阳移动与境外VPS默认修改DNS并永久保存 | 单纯の小窝</title>
 <meta name="description" content="一个记录脚本的博客" />
 <link rel="shortcut icon" href="https://mouzi3102.github.io/favicon.ico">
 <link rel="stylesheet" href="https://mouzi3102.github.io/styles/main.css">
@@ -89,7 +89,7 @@ n..." />
       <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
         <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
           <div class="search-wrapper section">
-            <form id="gridea-search-form" data-update="1591017629557" action="/search/index.html" class="search-form" _lpchecked="1">
+            <form id="gridea-search-form" data-update="1591018456891" action="/search/index.html" class="search-form" _lpchecked="1">
               <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
               <button type="submit" class="submit" aria-label="Submit">
                 <i class="fa fa-search-line"></i>
@@ -104,7 +104,7 @@ n..." />
         <div class="center content">
           <div class="featured-image cover" style="background-image: url('https://mouzi3102.github.io/post-images/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns.jpg');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2020-06-01"><i class="fa fa-calendar"></i><span class="lately">4 分钟前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2020-06-01"><i class="fa fa-calendar"></i><span class="lately">17 分钟前</span></time>
               
               <a href="https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/#comments" class="comments meta-info" title="">
                 <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/"> </span>
@@ -116,7 +116,7 @@ n..." />
               <div class="tags ">
                 
               </div>
-              <h1 class="title ularge white bold">南阳移动与境外VPS默认修改DNS</h1>
+              <h1 class="title ularge white bold">南阳移动与境外VPS默认修改DNS并永久保存</h1>
             </div>
           </div>
         </div>  
@@ -133,6 +133,11 @@ nameserver 211.138.24.66<br>
 nameserver 211.138.30.66<br>
 nameserver 211.138.180.2<br>
 nameserver 211.138.180.3</p>
+<p>注意使用下面命令后 将永远无法修改此文件 请谨慎使用</p>
+<p>修改 /etc/resolv.conf 同时设置权限 权限全给</p>
+<p>执行   chattr +i /etc/resolv.conf</p>
+<p>最后执行   service NetworkManager restart    重启网卡</p>
+<p>结束</p>
 
                 </div>
                 <div class="clear"></div>
@@ -188,7 +193,7 @@ nameserver 211.138.180.3</p>
                     <div class="info gradient-effect">
                       <time datetime="2020-06-01">2020-06-01</time>
                       <h4 class="title usmall">
-                        <a href="https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/">南阳移动与境外VPS默认修改DNS</a>
+                        <a href="https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/">南阳移动与境外VPS默认修改DNS并永久保存</a>
                       </h4>
                     </div>
                     <div class="clear"></div>
