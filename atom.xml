@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-06-01T11:21:20.511Z</updated>
+    <updated>2020-06-01T13:20:46.841Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,36 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[南阳移动与境外VPS默认修改DNS]]></title>
+        <id>https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/</id>
+        <link href="https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/">
+        </link>
+        <updated>2020-06-01T13:17:04.000Z</updated>
+        <content type="html"><![CDATA[<p>打开  /etc/resolv.conf</p>
+<p>修改为</p>
+<p>nameserver 8.8.8.8<br>
+nameserver 211.138.24.66<br>
+nameserver 211.138.30.66<br>
+nameserver 211.138.180.2<br>
+nameserver 211.138.180.3</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[修改azure  gcp默认用户名密码]]></title>
+        <id>https://mouzi3102.github.io/post/xiu-gai-azure-gcp-mo-ren-yong-hu-ming-mi-ma/</id>
+        <link href="https://mouzi3102.github.io/post/xiu-gai-azure-gcp-mo-ren-yong-hu-ming-mi-ma/">
+        </link>
+        <updated>2020-06-01T13:14:36.000Z</updated>
+        <content type="html"><![CDATA[<p>再也不用输入sudo su了</p>
+<p>#!/bin/bash<br>
+echo root:Vicer |sudo chpasswd root<br>
+sudo sed -i 's/^#?PermitRootLogin.<em>/PermitRootLogin yes/g' /etc/ssh/sshd_config;<br>
+sudo sed -i 's/^#?PasswordAuthentication.</em>/PasswordAuthentication yes/g' /etc/ssh/sshd_config;<br>
+sudo reboot</p>
+<p>粘贴自动执行 接着在连接信息输入    root    Vicer   从新连接即可</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[unZip安装]]></title>
         <id>https://mouzi3102.github.io/post/unzip-an-zhuang/</id>
@@ -120,49 +150,6 @@ baiyuetribe/oneindex</p>
         <content type="html"><![CDATA[<p>sudo apt-get update<br>
 sudo apt-get install build-essential<br>
 sudo apt-get install yum</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CentOS7查看和开启关闭防火墙]]></title>
-        <id>https://mouzi3102.github.io/post/centos7-cha-kan-he-kai-qi-guan-bi-fang-huo-qiang/</id>
-        <link href="https://mouzi3102.github.io/post/centos7-cha-kan-he-kai-qi-guan-bi-fang-huo-qiang/">
-        </link>
-        <updated>2020-05-10T18:43:02.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="centos-70默认使用的是firewall作为防火墙">CentOS 7.0默认使用的是firewall作为防火墙</h1>
-<p>查看防火墙状态</p>
-<p>firewall-cmd --state</p>
-<p>停止firewall</p>
-<p>systemctl stop firewalld.service</p>
-<p>禁止firewall开机启动</p>
-<p>systemctl disable firewalld.service</p>
-<p>开启防火墙</p>
-<p>systemctl start firewalld.service</p>
-<p>设置开机自启</p>
-<p>systemctl enable firewalld.service</p>
-<p>重启防火墙</p>
-<p>systemctl restart firewalld.service</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NAT手动安装Brook]]></title>
-        <id>https://mouzi3102.github.io/post/nat-shou-dong-an-zhuang-brook/</id>
-        <link href="https://mouzi3102.github.io/post/nat-shou-dong-an-zhuang-brook/">
-        </link>
-        <updated>2020-05-09T19:25:57.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="注意-请给所有上传的文件最高权限">注意 请给所有上传的文件最高权限</h1>
-<p>安装Brook</p>
-<p>https://drive.google.com/file/d/10WfSRVLNCVNOBtxko_iiwtuPzKTBR8H8/view?usp=sharing</p>
-<p>点击上面得链接先下载Brook脚本上传至/root目录</p>
-<p>https://drive.google.com/file/d/1IINcdENiQY5hb24B5l1M_BsxM2g1KbOU/view?usp=sharing</p>
-<p>把/usr/local这两个文件夹给予最高权限后在/usr/local 文件夹下brook-pf文件夹 同时给予最高权限 在点击上面得链接下载book文件上传至brook-pf文件夹 给予最高权限</p>
-<p>https://drive.google.com/file/d/1tRJIMoiBkQCLPsBYUrHguhb6sPDy45QY/view?usp=sharing</p>
-<p>下载配置文件 上传至/usr/local/brook-pf 文件夹 给予最高权限</p>
-<p>https://drive.google.com/file/d/1Cr3wob5IEjyzyNjBpRv9ud_mQToP9-q7/view?usp=sharing</p>
-<p>下载日志文件 上传至/usr/local/brook-pf 文件夹 给予最高权限</p>
-<p>https://drive.google.com/file/d/1Lw5tvUCUDVP3ujZdDuUqgt6oZtWF7SFI/view?usp=sharing</p>
-<p>下载Brook执行文件 上传至 /etc/init.d 文件夹 同时给予/etc/init.d两个文件夹和执行文件最高权限<br>
-最后<br>
-输入 bash brook-pf.sh 输入7 输入1即可添加转发</p>
 ]]></content>
     </entry>
 </feed>

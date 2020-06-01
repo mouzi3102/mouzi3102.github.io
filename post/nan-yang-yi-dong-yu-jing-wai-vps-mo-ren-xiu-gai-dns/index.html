@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>BBRPlus 安装方法 | 单纯の小窝</title>
+<title>南阳移动与境外VPS默认修改DNS | 单纯の小窝</title>
 <meta name="description" content="一个记录脚本的博客" />
 <link rel="shortcut icon" href="https://mouzi3102.github.io/favicon.ico">
 <link rel="stylesheet" href="https://mouzi3102.github.io/styles/main.css">
@@ -15,9 +15,14 @@
 <script src="https://mouzi3102.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://mouzi3102.github.io/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="一键脚本（仅CentOS）
-wget &quot;https://github.com/a8866051/bbrplus/raw/master/ok_bbrplus_centos.sh&quot; &amp;&amp; chmod +x o..." />
-    <meta name="keywords" content="服务器" />
+    <meta name="description" content="打开  /etc/resolv.conf
+修改为
+nameserver 8.8.8.8
+nameserver 211.138.24.66
+nameserver 211.138.30.66
+nameserver 211.138.180.2
+n..." />
+    <meta name="keywords" content="" />
     <script src="https://mouzi3102.github.io/media/js/waterfall.min.js"></script>
     <script src="https://mouzi3102.github.io/media/js/prism.min.js"></script>
   </head>
@@ -97,23 +102,21 @@ wget &quot;https://github.com/a8866051/bbrplus/raw/master/ok_bbrplus_centos.sh&q
       <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
         <div class="center content">
-          <div class="featured-image cover" style="background-image: url('https://mouzi3102.github.io/post-images/bbrplus-an-zhuang-fang-fa.jpg');">
+          <div class="featured-image cover" style="background-image: url('https://mouzi3102.github.io/post-images/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns.jpg');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2020-05-10"><i class="fa fa-calendar"></i><span class="lately">23 天前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2020-06-01"><i class="fa fa-calendar"></i><span class="lately">4 分钟前</span></time>
               
-              <a href="https://mouzi3102.github.io/post/bbrplus-an-zhuang-fang-fa/#comments" class="comments meta-info" title="">
-                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/bbrplus-an-zhuang-fang-fa/"> </span>
+              <a href="https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/"> </span>
               </a>
-              <span id="/bbrplus-an-zhuang-fang-fa/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              <span id="/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
               
             </div>
             <div class="info">
               <div class="tags ">
                 
-                      <a href="https://mouzi3102.github.io/tag/_FqJAz-1I/" class="ctag ctag-0 ctag-_FqJAz-1I" aria-label="">服务器</a>
-                    
               </div>
-              <h1 class="title ularge white bold">BBRPlus 安装方法</h1>
+              <h1 class="title ularge white bold">南阳移动与境外VPS默认修改DNS</h1>
             </div>
           </div>
         </div>  
@@ -123,29 +126,13 @@ wget &quot;https://github.com/a8866051/bbrplus/raw/master/ok_bbrplus_centos.sh&q
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <p>一键脚本（仅CentOS）</p>
-<p>wget &quot;https://github.com/a8866051/bbrplus/raw/master/ok_bbrplus_centos.sh&quot; &amp;&amp; chmod +x ok_bbrplus_centos.sh &amp;&amp; ./ok_bbrplus_centos.sh</p>
-<p>安装后，执行uname -r，显示4.14.129-bbrplus则切换内核成功<br>
-执行lsmod | grep bbr，显示有bbrplus则开启成功</p>
-<p>手动安装方法：</p>
-<p>下载内核</p>
-<p>wget https://github.com/a8866051/bbrplus/raw/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm</p>
-<p>安装内核</p>
-<p>yum install -y kernel-4.14.129-bbrplus.rpm</p>
-<p>设置fq</p>
-<p>echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf</p>
-<p>设置bbrplus</p>
-<p>echo &quot;net.ipv4.tcp_congestion_control=bbrplus&quot; &gt;&gt; /etc/sysctl.conf</p>
-<p>重启</p>
-<p>reboot</p>
-<p>检查内核版本</p>
-<p>uname -r</p>
-<p>显示4.14.129-bbrplus则成功</p>
-<p>检查bbrplus是否已经启动</p>
-<p>lsmod | grep bbrplus</p>
-<p>显示有tcp_bbrplus则成功</p>
-<p>卸载方法：<br>
-安装别的内核bbrplus自动失效</p>
+                  <p>打开  /etc/resolv.conf</p>
+<p>修改为</p>
+<p>nameserver 8.8.8.8<br>
+nameserver 211.138.24.66<br>
+nameserver 211.138.30.66<br>
+nameserver 211.138.180.2<br>
+nameserver 211.138.180.3</p>
 
                 </div>
                 <div class="clear"></div>
@@ -155,26 +142,13 @@ wget &quot;https://github.com/a8866051/bbrplus/raw/master/ok_bbrplus_centos.sh&q
 
             <section class="related section">
               
-              <article class="prev grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/net-speeder-an-zhuang.jpg');"></div>
-                 <a href="https://mouzi3102.github.io/post/net-speeder-an-zhuang/" class="full-link"></a>
-                 <div class="info">
-                  <time datetime="2020-05-10">2020-05-10</time>
-                  <h4 class="title white no-margin">net-speeder 安装</h4>
-                </div>
-                 <span class="epcl-button red">
-                  <img src="https://mouzi3102.github.io/media/images/left-arrow.svg" width="15" alt="Left Arrow">
-                </span>
-                <div class="overlay"></div>
-              </article>
-              
               
               <article class="next grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/jie-jue-gcc-wei-zhao-dao-ming-ling.jpg');"></div>
-                 <a href="https://mouzi3102.github.io/post/jie-jue-gcc-wei-zhao-dao-ming-ling/" class="full-link"></a>
+                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/xiu-gai-azure-gcp-mo-ren-yong-hu-ming-mi-ma.png');"></div>
+                 <a href="https://mouzi3102.github.io/post/xiu-gai-azure-gcp-mo-ren-yong-hu-ming-mi-ma/" class="full-link"></a>
                  <div class="info">
-                  <time datetime="2020-05-10">2020-05-10</time>
-                  <h4 class="title white no-margin">解决gcc 未找到命令</h4>
+                  <time datetime="2020-06-01">2020-06-01</time>
+                  <h4 class="title white no-margin">修改azure  gcp默认用户名密码</h4>
                 </div>
                  <span class="epcl-button red">
                   <img src="https://mouzi3102.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
