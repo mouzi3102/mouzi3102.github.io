@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-06-01T13:34:24.062Z</updated>
+    <updated>2020-06-02T17:33:45.082Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[V2ray 一键脚本]]></title>
+        <id>https://mouzi3102.github.io/post/v2ray-yi-jian-jiao-ben/</id>
+        <link href="https://mouzi3102.github.io/post/v2ray-yi-jian-jiao-ben/">
+        </link>
+        <updated>2020-06-02T17:30:46.000Z</updated>
+        <content type="html"><![CDATA[<p>一件执行 选择 1 安装即可</p>
+<p>bash &lt;(curl -s -L https://git.io/v2ray.sh)</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[南阳移动与境外VPS默认修改DNS并永久保存]]></title>
         <id>https://mouzi3102.github.io/post/nan-yang-yi-dong-yu-jing-wai-vps-mo-ren-xiu-gai-dns/</id>
@@ -144,17 +154,6 @@ curl -sSL https://get.docker.com/ | sh</p>
 <p>#正式启动服务：</p>
 <p>docker run -d -p 8181:80 -v /opt/oneindex:/var/www/html --restart=always<br>
 baiyuetribe/oneindex</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Debian 安装 yum]]></title>
-        <id>https://mouzi3102.github.io/post/debian-an-zhuang-yum/</id>
-        <link href="https://mouzi3102.github.io/post/debian-an-zhuang-yum/">
-        </link>
-        <updated>2020-05-11T06:34:14.000Z</updated>
-        <content type="html"><![CDATA[<p>sudo apt-get update<br>
-sudo apt-get install build-essential<br>
-sudo apt-get install yum</p>
 ]]></content>
     </entry>
 </feed>
