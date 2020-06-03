@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-06-02T17:34:42.626Z</updated>
+    <updated>2020-06-03T14:21:06.150Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,14 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[DEAN FUJIOKA「Echo」Music Video]]></title>
+        <id>https://mouzi3102.github.io/post/dean-fujiokaecho-music-video/</id>
+        <link href="https://mouzi3102.github.io/post/dean-fujiokaecho-music-video/">
+        </link>
+        <updated>2020-06-03T14:19:26.000Z</updated>
+        <content type="html"><![CDATA[<iframe width="1280" height="720" src="https://www.youtube.com/embed/-idvEIznptc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[V2ray 一键脚本]]></title>
         <id>https://mouzi3102.github.io/post/v2ray-yi-jian-jiao-ben/</id>
@@ -130,30 +138,6 @@ https://support.google.com/youtube/answer/171780?hl=zh-Hans</p>
 <script type="text/javascript">  
 document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
 </script>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Docker安装Oneindex]]></title>
-        <id>https://mouzi3102.github.io/post/docker-an-zhuang-oneindex/</id>
-        <link href="https://mouzi3102.github.io/post/docker-an-zhuang-oneindex/">
-        </link>
-        <updated>2020-05-11T06:36:04.000Z</updated>
-        <content type="html"><![CDATA[<p>安装 docker(如果机器没有的话）<br>
-curl -sSL https://get.docker.com/ | sh</p>
-<p>service docker start#启动docker</p>
-<p>service docker stop#停止docker</p>
-<p>service docker restart#重启docker</p>
-<p>设置docker开机自启动如下：</p>
-<p>systemctl enable docker</p>
-<p>之后执行安装命令</p>
-<p>#创建临时容器：</p>
-<p>docker run -itd --name=tmp baiyuetribe/oneindex</p>
-<p>#拷贝容器内文件到宿主机目录：</p>
-<p>docker cp tmp:/var/www/html /opt/oneindex</p>
-<p>docker rm -f tmp</p>
-<p>#正式启动服务：</p>
-<p>docker run -d -p 8181:80 -v /opt/oneindex:/var/www/html --restart=always<br>
-baiyuetribe/oneindex</p>
 ]]></content>
     </entry>
 </feed>
