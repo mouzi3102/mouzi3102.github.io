@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-06-05T08:51:01.873Z</updated>
+    <updated>2020-06-11T13:04:13.959Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[VPS增加交换内存]]></title>
+        <id>https://mouzi3102.github.io/post/vps-zeng-jia-jiao-huan-nei-cun/</id>
+        <link href="https://mouzi3102.github.io/post/vps-zeng-jia-jiao-huan-nei-cun/">
+        </link>
+        <updated>2020-06-11T12:54:08.000Z</updated>
+        <content type="html"><![CDATA[<p>解决内存低于512M的问题</p>
+<p>一、创建文件</p>
+<p>sudo dd if=/dev/zero of=/root/swap bs=1024 count=1024000</p>
+<p>SSH 执行以上命令，创建一个名为 swapfile 的 1G 空文件（写 0 占用磁盘）。</p>
+<p>二、制作为 Swap 文件</p>
+<p>mkswap /root/swap</p>
+<p>三. 授予权限</p>
+<p>chmod 0600 /root/swap</p>
+<p>四 . 启动</p>
+<p>swapon /root/swap</p>
+<p>五.   vim /etc/fstab         或     vi //etc/fstab</p>
+<p>添加</p>
+<p>/root/swap  swap    swap  defaults  0  0</p>
+<p>：wq  保存</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DEAN FUJIOKA「Echo」Music Video]]></title>
         <id>https://mouzi3102.github.io/post/dean-fujiokaecho-music-video/</id>
@@ -121,23 +143,6 @@ sudo reboot</p>
 <p>关于YouTube 视频嵌入的官方文档<br>
 https://support.google.com/youtube/answer/171780?hl=zh-Hans</p>
 <p>关于嵌入视频尺寸 修改 width=&quot;1280&quot; height=&quot;720&quot;即可</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[bilibili 视频插入博客代码]]></title>
-        <id>https://mouzi3102.github.io/post/bilibili-shi-pin-cha-ru-ce-shi/</id>
-        <link href="https://mouzi3102.github.io/post/bilibili-shi-pin-cha-ru-ce-shi/">
-        </link>
-        <updated>2020-05-11T09:25:45.000Z</updated>
-        <content type="html"><![CDATA[<p>https://yww.uy/yQmnY</p>
-<p>现在bilibili已经改版为BV号 获取AV号使用Bilibili-Evolved 这个油猴脚本获取即可<br>
-<img src="https://mouzi3102.github.io/post-images/1589190305500.png" alt="" loading="lazy"></p>
-<p>附上效果图</p>
-<figure data-type="image" tabindex="1"><img src="https://mouzi3102.github.io/post-images/1589190342976.png" alt="" loading="lazy"></figure>
-<iframe id="spkj" src="https://player.bilibili.com/player.html?aid=32973478&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
-<script type="text/javascript">  
-document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
-</script>
 ]]></content>
     </entry>
 </feed>
