@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mouzi3102.github.io</id>
     <title>单纯の小窝</title>
-    <updated>2020-06-11T13:04:13.959Z</updated>
+    <updated>2020-06-11T13:22:06.017Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mouzi3102.github.io"/>
     <link rel="self" href="https://mouzi3102.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://mouzi3102.github.io/images/avatar.png</logo>
     <icon>https://mouzi3102.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 单纯の小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[N1盒子 固件更新地址]]></title>
+        <id>https://mouzi3102.github.io/post/n1-he-zi-gu-jian-geng-xin-di-zhi/</id>
+        <link href="https://mouzi3102.github.io/post/n1-he-zi-gu-jian-geng-xin-di-zhi/">
+        </link>
+        <updated>2020-06-11T13:17:06.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.right.com.cn/forum/thread-3160780-1-1.html</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[VPS增加交换内存]]></title>
         <id>https://mouzi3102.github.io/post/vps-zeng-jia-jiao-huan-nei-cun/</id>
@@ -131,18 +140,6 @@ sudo reboot</p>
         <content type="html"><![CDATA[<p>wget -O net_speeder.sh --no-check-certificate https://soft.mengclaw.com/Bash/net_speeder.sh &amp;&amp; bash net_speeder.sh</p>
 <p>选择1安装</p>
 <p>下次开机后输入   bash net_speeder.sh  进行启动</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[茜雫凛「自縛霊」]]></title>
-        <id>https://mouzi3102.github.io/post/youtube-shi-pin-cha-ru-ce-shi/</id>
-        <link href="https://mouzi3102.github.io/post/youtube-shi-pin-cha-ru-ce-shi/">
-        </link>
-        <updated>2020-05-11T10:00:34.000Z</updated>
-        <content type="html"><![CDATA[<iframe width="1280" height="720" src="https://www.youtube.com/embed/rjDddkFoIFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>关于YouTube 视频嵌入的官方文档<br>
-https://support.google.com/youtube/answer/171780?hl=zh-Hans</p>
-<p>关于嵌入视频尺寸 修改 width=&quot;1280&quot; height=&quot;720&quot;即可</p>
 ]]></content>
     </entry>
 </feed>
