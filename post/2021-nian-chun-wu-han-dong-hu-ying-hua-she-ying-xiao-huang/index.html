@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>docker安装及docker安装aria2+aria2ui+Filebrowser | 单纯の小窝</title>
+<title>2021年春武汉东湖樱花 摄影 小黄 | 单纯の小窝</title>
 <meta name="description" content="一个记录脚本的博客" />
 <link rel="shortcut icon" href="https://mouzi3102.github.io/favicon.ico">
 <link rel="stylesheet" href="https://mouzi3102.github.io/styles/main.css">
@@ -15,12 +15,14 @@
 <script src="https://mouzi3102.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://mouzi3102.github.io/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="安装 docker(如果机器没有的话）
-curl -sSL https://get.docker.com/ | sh
-service docker start#启动docker
-service docker stop#停止docker
-se..." />
-    <meta name="keywords" content="服务器" />
+    <meta name="description" content="
+
+
+
+
+
+..." />
+    <meta name="keywords" content="" />
     <script src="https://mouzi3102.github.io/media/js/waterfall.min.js"></script>
     <script src="https://mouzi3102.github.io/media/js/prism.min.js"></script>
   </head>
@@ -100,23 +102,21 @@ se..." />
       <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
         <div class="center content">
-          <div class="featured-image cover" style="background-image: url('https://mouzi3102.github.io/post-images/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser.jpg');">
+          <div class="featured-image cover" style="background-image: url('https://mouzi3102.github.io/post-images/2021-nian-chun-wu-han-dong-hu-ying-hua-she-ying-xiao-huang.png');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2020-05-10"><i class="fa fa-calendar"></i><span class="lately">10 个月前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2021-03-15"><i class="fa fa-calendar"></i><span class="lately">3 分钟前</span></time>
               
-              <a href="https://mouzi3102.github.io/post/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser/#comments" class="comments meta-info" title="">
-                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser/"> </span>
+              <a href="https://mouzi3102.github.io/post/2021-nian-chun-wu-han-dong-hu-ying-hua-she-ying-xiao-huang/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/2021-nian-chun-wu-han-dong-hu-ying-hua-she-ying-xiao-huang/"> </span>
               </a>
-              <span id="/docker-an-zhuang-ji-docker-an-zhuang-aria2aria2uifilebrowser/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              <span id="/2021-nian-chun-wu-han-dong-hu-ying-hua-she-ying-xiao-huang/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
               
             </div>
             <div class="info">
               <div class="tags ">
                 
-                      <a href="https://mouzi3102.github.io/tag/_FqJAz-1I/" class="ctag ctag-0 ctag-_FqJAz-1I" aria-label="">服务器</a>
-                    
               </div>
-              <h1 class="title ularge white bold">docker安装及docker安装aria2+aria2ui+Filebrowser</h1>
+              <h1 class="title ularge white bold">2021年春武汉东湖樱花 摄影 小黄</h1>
             </div>
           </div>
         </div>  
@@ -126,44 +126,12 @@ se..." />
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <h1 id="安装-docker如果机器没有的话">安装 docker(如果机器没有的话）</h1>
-<p>curl -sSL https://get.docker.com/ | sh</p>
-<p>service docker start#启动docker</p>
-<p>service docker stop#停止docker</p>
-<p>service docker restart#重启docker</p>
-<p>设置docker开机自启动如下：</p>
-<p>systemctl enable docker</p>
-<h1 id="一键安装aria2aria2uifilebrowser">一键安装aria2+aria2ui+Filebrowser</h1>
-<p>docker run -d --name aria2-ui -v /home/down:/data -p 80:80 wahyd4/aria2-ui</p>
-<p>Aria2: http://yourip/ui/<br>
-FileManger: http://yourip<br>
-请使用 admin/admin 进行登录</p>
-<p>这样下载的文件都放在 /home/down 这个文件夹里面</p>
-<p>文件夹没有写入权限，有兴趣看这篇文章了解 文章链接<br>
-不管原理，无脑给予 777</p>
-<p>chmod 777 /home/down</p>
-<p>如果不想用了可以使用下面的命令删除</p>
-<p>docker rm -f aria2-ui</p>
-<p>如果想加密 请删除后执行</p>
-<p>docker run -d --name ariang <br>
--p 80:80 <br>
--e PUID=1000 <br>
--e PGID=1000 <br>
--e ENABLE_AUTH=true <br>
--e RPC_SECRET=Hello <br>
--e ARIA2_SSL=false <br>
--e ARIA2_USER=user <br>
--e ARIA2_PWD=pwd <br>
--v /home/down:/data <br>
-wahyd4/aria2-ui</p>
-<p>默认用户名：user<br>
-默认密码：pwd<br>
-可自行修改</p>
-<p>后续补充<br>
-根据个人的需求来选择，如果觉得不需要加密 Aria2 的管理界面的，其实用第一种方式就行了。非常简单，一行命令即可。</p>
-<p>同时也可以结合 APP ：Transdrone_2.5.15.apk 来使用，这个我放在网盘里，使用它来管理多个下载工具也是比较方便的。</p>
-<p>http://veger.ys168.com/</p>
-<figure data-type="image" tabindex="1"><img src="https://mouzi3102.github.io/post-images/1589051927819.webp" alt="" loading="lazy"></figure>
+                  <p><img src="https://mouzi3102.github.io/post-images/1615786702426.png" alt="" loading="lazy"><br>
+<img src="https://mouzi3102.github.io/post-images/1615786706413.png" alt="" loading="lazy"><br>
+<img src="https://mouzi3102.github.io/post-images/1615786710118.png" alt="" loading="lazy"><br>
+<img src="https://mouzi3102.github.io/post-images/1615786729052.png" alt="" loading="lazy"><br>
+<img src="https://mouzi3102.github.io/post-images/1615786738468.png" alt="" loading="lazy"><br>
+<img src="https://mouzi3102.github.io/post-images/1615786744829.png" alt="" loading="lazy"></p>
 
                 </div>
                 <div class="clear"></div>
@@ -173,26 +141,13 @@ wahyd4/aria2-ui</p>
 
             <section class="related section">
               
-              <article class="prev grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/shi-yong-ruan-jian-bao-an-zhuang-jellfyin.jpeg');"></div>
-                 <a href="https://mouzi3102.github.io/post/shi-yong-ruan-jian-bao-an-zhuang-jellfyin/" class="full-link"></a>
-                 <div class="info">
-                  <time datetime="2020-05-10">2020-05-10</time>
-                  <h4 class="title white no-margin">使用软件包安装jellfyin</h4>
-                </div>
-                 <span class="epcl-button red">
-                  <img src="https://mouzi3102.github.io/media/images/left-arrow.svg" width="15" alt="Left Arrow">
-                </span>
-                <div class="overlay"></div>
-              </article>
-              
               
               <article class="next grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/net-speeder-an-zhuang.jpg');"></div>
-                 <a href="https://mouzi3102.github.io/post/net-speeder-an-zhuang/" class="full-link"></a>
+                <div class="thumb cover lazy loaded" style="background-image: url('https://mouzi3102.github.io/post-images/you-hua-centos7-wang-su-yu-xing-neng.jpg');"></div>
+                 <a href="https://mouzi3102.github.io/post/you-hua-centos7-wang-su-yu-xing-neng/" class="full-link"></a>
                  <div class="info">
-                  <time datetime="2020-05-10">2020-05-10</time>
-                  <h4 class="title white no-margin">net-speeder 安装</h4>
+                  <time datetime="2020-06-11">2020-06-11</time>
+                  <h4 class="title white no-margin">优化centos7网速与性能</h4>
                 </div>
                  <span class="epcl-button red">
                   <img src="https://mouzi3102.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
